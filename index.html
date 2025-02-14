@@ -51,7 +51,7 @@
 
     <!-- Tab Bar for navigation -->
     <div class="tab-bar">
-        <div class="tab active" id="tab-mc" onclick="loadTab('mc')">Old Minecraft</div>
+        <div class="tab active" id="tab-eag" onclick="loadTab('eag')">Eaglercraft</div>
         <div class="tab" id="tab-3filedownloader" onclick="loadTab('3filedownloader')">Text to HTML</div>
 	<div class="tab" id="tab-htmlhelp" onclick="loadTab('htmlhelp')">Html Basics</div>
         <div class="tab" id="tab-csshelp" onclick="loadTab('csshelp')">Css Basics</div>
@@ -76,8 +76,8 @@
             // Change iframe source based on the tab
             var iframe = document.getElementById('content-frame');
             switch (tab) {
-                case 'mc':
-                    iframe.src = 'mc.html';
+                case 'eag':
+                    iframe.src = 'eaglercraft.1.5.2.html';
                     break;
                 case '3filedownloader':
                     iframe.src = '3filedownloader.html';
