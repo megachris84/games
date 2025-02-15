@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dev Portal</title>
+    <title>Game Site</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -52,7 +52,7 @@
     <!-- Tab Bar for navigation -->
     <div class="tab-bar">
         <div class="tab active" id="tab-eag" onclick="loadTab('eag')">Eaglercraft</div>
-        <div class="tab" id="tab-3filedownloader" onclick="loadTab('3filedownloader')">Text to HTML</div>
+        <div class="tab" id="tab-slope" onclick="loadTab('slope')">Text to HTML</div>
 	<div class="tab" id="tab-htmlhelp" onclick="loadTab('htmlhelp')">Html Basics</div>
         <div class="tab" id="tab-csshelp" onclick="loadTab('csshelp')">Css Basics</div>
         <div class="tab" id="tab-jshelp" onclick="loadTab('jshelp')">Js Basics</div>
@@ -60,7 +60,7 @@
 
     <!-- Content Section that will load the iframes or embedded pages -->
     <div class="content">
-        <iframe id="content-frame" src="compiler.html"></iframe>
+        <iframe id="content-frame" src="home.html"></iframe>
     </div>
 
     <script>
@@ -79,8 +79,8 @@
                 case 'eag':
                     iframe.src = 'eaglercraft.1.5.2.html';
                     break;
-                case '3filedownloader':
-                    iframe.src = '3filedownloader.html';
+                case 'slope':
+                    iframe.src = 'slope.html';
                     break;
                 case 'htmlhelp':
                     iframe.src = 'htmlhelp.html';
@@ -92,7 +92,7 @@
                     iframe.src = 'jshelp.html';
                     break;
                 default:
-                    iframe.src = 'compiler.html';
+                    iframe.src = 'home.html';
             }
         }
     </script>
